@@ -1,0 +1,55 @@
+.aboutme{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.home{
+    background-color: var(--background-color);
+    border: none;
+    color:  var(--primary-white);
+    font-size: 24px;
+    font-family: 'Bangers', cursive;
+}
+
+.homeLink{
+    width: 20px;
+    height: 20px;
+}
+
+.backHome{
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 24px;
+    position: fixed;
+}
+
+.home:hover{
+    font-size: 26px;
+}
+
+.spaceshipImg{
+    display: flex;
+    width: 677px;
+    height: 400px;
+}
+
+.spaceship{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: -2%;
+    animation: runaccross;
+    animation-duration: 6s;
+    justify-content: center;
+    margin-top: 15%;
+}
+  
+  @keyframes runaccross {
+    from {left: 80%;}
+    to {left: -100%;}
+  }
+
