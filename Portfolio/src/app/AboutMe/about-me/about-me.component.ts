@@ -10,15 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class AboutMeComponent implements OnInit {
   
   show = false;
-  seconds = 3.5;
+  seconds = 2;
 
   showContent(){
     this.show = true;
     return this.show
   }
-
-
-
   constructor() { }
 
   

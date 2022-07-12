@@ -1,9 +1,30 @@
 .aboutme{
     display: flex;
-    position: relative;
+    position: relative; 
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+}
+
+.content{
+    width: 100%;
+}
+
+.info{
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadeIn {
+    0% { 
+        opacity: 0;
+     }
+    100% { 
+        opacity: 1; 
+    }
+  }
+
+.form.scroll{
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .home{
@@ -12,6 +33,10 @@
     color:  var(--primary-white);
     font-size: 24px;
     font-family: 'Bangers', cursive;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 40px;
+
 }
 
 .homeLink{
@@ -20,10 +45,24 @@
 }
 
 .backHome{
-    margin-top: 40px;
-    margin-left: 40px;
+    display: flex;
+    position: relative;
     font-size: 24px;
-    position: fixed;
+    height: 10%;
+    width: 100%;
+    animation: fadeIn 0.5s;
+    animation-fill-mode: backwards;
+    margin-bottom: 40px;
+}
+
+::ng-deep body{
+    overflow-y: auto;
+}
+
+.innerContent{
+    display: flex;
+    position: relative;
+    width: 100%;
 }
 
 .home:hover{
@@ -31,7 +70,6 @@
 }
 
 .spaceshipImg{
-    display: flex;
     width: 677px;
     height: 400px;
 }
@@ -43,13 +81,57 @@
     height: 100%;
     left: -2%;
     animation: runaccross;
-    animation-duration: 6s;
+    animation-duration: 4s;
     justify-content: center;
     margin-top: 15%;
 }
   
   @keyframes runaccross {
     from {left: 80%;}
-    to {left: -100%;}
+    to {left: -120%;}
   }
 
+.aboutText{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    float: left;
+    height: 100%;
+    width: 60%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.photo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+button{
+    width: 100%;
+}
+
+.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 521px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8), inset -4px -4px 15px #4644BF;
+}
+
+.MyPhoto{
+    display: block;
+    margin: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    width: 252px;
+    height: 473px;
+}

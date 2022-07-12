@@ -1,11 +1,22 @@
 <form class="aboutme">
-    <div class="content" *ngIf="show">
-        <div class="backHome">
-        
-            <button class="home" routerLink=""><img class="homeLink" src="../../../assets/AlienIcon.png"/> HOME</button>
-        </div>
+   <div class="content" *ngIf="show">
+    <div class="backHome">
+        <button class="home" routerLink=""><img class="homeLink" src="../../../assets/AlienIcon.png"/> HOME</button>
     </div>
-    <div class="spaceship" *ngIf="!show">
+    <div class="info">
+        <div class="innerContent">
+            <div class="aboutText">
+                 <button>Button</button>
+            </div>
+            <div class="photo">
+             <div class="picture">
+                 <img class = "MyPhoto" src="../../../assets/Pams_portfolio_photo.png">
+             </div>
+            </div>
+         </div>
+    </div>
+   </div>
+   <div class="spaceship" *ngIf="!show">
         <img class="spaceshipImg" src="../../../assets/Pam_se_spaceship_Regs.png">
-    </div>
+   </div>
 </form>
