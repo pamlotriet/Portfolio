@@ -1,0 +1,16 @@
+.mywork {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: mymove 10s;
+  }
+  
+  div{
+    display: flex;
+    position: fixed;
+    margin: auto;
+  }
+  @keyframes mymove {
+    from {left: -100%;}
+    to {left: 100%;}
+  }
