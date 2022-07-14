@@ -9,7 +9,17 @@ export class MyWorkComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  show = false;
+  seconds = 2;
 
+  showContent(){
+    this.show = true;
+    return this.show
+  }
+  
+  ngOnInit(): void {
+    setInterval(() => {
+      this.showContent();
+    }, this.seconds * 1000);
+  }
 }

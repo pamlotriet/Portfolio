@@ -1,16 +1,97 @@
 .mywork {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    animation: mymove 10s;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    animation: fadeIn 0.5s;
+    animation-fill-mode: backwards;
   }
-  
-  div{
+
+  .home{
+    background-color: var(--background-color);
+    border: none;
+    color:  var(--primary-white);
+    font-size: 24px;
+    font-family: 'Bangers', cursive;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: fit-content;
+}
+
+.homeLink{
+    width: 20px;
+    height: 20px;
+}
+
+.backHome{
     display: flex;
-    position: fixed;
-    margin: auto;
-  }
-  @keyframes mymove {
-    from {left: -100%;}
-    to {left: 100%;}
-  }
+    position: relative;
+    font-size: 24px;
+    width: fit-content;
+    margin-bottom: 40px;
+}
+
+.home:hover{
+  font-size: 26px;
+  margin-top: 37px;
+  margin-left: 37px;
+  cursor: pointer;
+}
+
+.spaceshipImg{
+  width: 677px;
+  height: 400px;
+}
+
+.spaceship{
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: -2%;
+  animation: runaccross;
+  animation-duration: 4s;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+@keyframes runaccross {
+  from {left: 80%;}
+  to {left: -120%;}
+}
+
+.heading{
+  display: flex;
+  position: relative;
+  float: left;
+  font-size: 64px;
+  font-family: 'Bangers', cursive;
+  text-align: left;
+  margin-left: 40px;
+  color: var(--primary-white);
+}
+
+.headings{
+  display: flex;
+flex-direction: row;
+}
+
+.projectContainer{
+  float: left;
+  display: flex;
+  width: 1200px;
+  height: 415px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.9), inset -4px -4px 18px #6C69FF;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 80px;
+}
+

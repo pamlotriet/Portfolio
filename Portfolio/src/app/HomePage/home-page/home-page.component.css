@@ -55,6 +55,14 @@
     width: 100%;
     height: 100%;
     margin: auto;
+}
+
+.ContactMe{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
     margin-bottom: 50%;
 }
 

@@ -1,5 +1,28 @@
 <form class="mywork">
-    <div>
-        <p>my-work works!</p>
+    <div class="content" *ngIf = "show">
+        <div class="backHome">
+            <button class="home" routerLink=""><img class="homeLink" src="../../../assets/AlienIcon.png"/> HOME</button>
+        </div>
+        <div class="headings">
+            <h1 class = "heading">MY WORK</h1>
+        </div>
+        <div class="info">
+            <div class="projectContainer">
+            
+            </div>
+        </div>
+        <div class="info">
+            <div class="projectContainer">
+            
+            </div>
+        </div>
+        <div class="info">
+            <div class="projectContainer">
+            
+            </div>
+        </div>
     </div>
+    <div class="spaceship" *ngIf="!show">
+        <img class="spaceshipImg" src="../../../assets/Pam_se_spaceship_Regs.png">
+   </div>
 </form>
