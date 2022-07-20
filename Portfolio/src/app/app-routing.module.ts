@@ -3,6 +3,7 @@ import { MyWorkComponent } from './MyWork/my-work/my-work.component';
 import { AboutMeComponent } from './AboutMe/about-me/about-me.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactMeComponent } from './ContactMe/contact-me/contact-me.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path: 'mywork',component:MyWorkComponent
+  },
+  {
+    path: 'contactme',component:ContactMeComponent
   }
 ];
 
