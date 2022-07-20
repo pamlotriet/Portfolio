@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "gb": "ng build --prod --base-href https://pamlotriet.github.io/Portfolio",
+    "gb": "ng build --prod --base-href=https://pamlotriet.github.io/Portfolio",
     "deploy": "npx angular-cli-ghpages --dir=/src"
   },
   "private": true,
