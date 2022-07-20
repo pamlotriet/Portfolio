@@ -14,10 +14,18 @@ export class AboutMeComponent implements OnInit {
     this.show = true;
     return this.show
   }
-  constructor() { }
 
+  playAudio(){
+    let audio = new Audio();
+    audio.src = "assets/Spaceship.wav";
+    audio.load();
+    audio.play();
+  }
+
+  constructor() { }
   
   ngOnInit(): void {
+    this.playAudio();
     setInterval(() => {
       this.showContent();
     }, this.seconds * 1000);
