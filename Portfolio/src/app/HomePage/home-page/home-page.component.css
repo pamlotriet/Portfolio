@@ -83,6 +83,44 @@
 .homeAlien{
     display: flex;
     position: fixed;
-    height: 70%;
-    width: 45%;
+    height: 500px;
+    width: 635px;
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 950px) {
+    .homeAlien{
+        display: flex;
+        position: fixed;
+        height: 300px;
+        width: 400px;
+    }
+
+    .homeButtons{
+        position: relative;
+        width: 150px;
+        height: 50px;
+        margin-right: 40px;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (min-device-width: 951px) and (max-device-width: 1024px) {
+    .homeAlien{
+        display: flex;
+        position: fixed;
+        height: 400px;
+        width: 500px;
+    }
+
+    .homeButtons{
+        position: relative;
+        width: 200px;
+        height: 80px;
+        margin-right: 40px;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+  }
+
+  
