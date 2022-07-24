@@ -1,0 +1,147 @@
+.contactMe{
+    display: flex;
+    flex: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+}
+
+.innerContent{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.illustration{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40%;
+    height: 100vh;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 60%;
+    height: 100vh;
+}
+
+.alienImage{
+    display: flex;
+    position: relative;
+    justify-content: center; 
+    align-items: center;
+}
+
+.homeAlien{
+    display: flex;
+    height: 448px;
+    width: 300px;
+}
+
+.heading{
+    color: var(--primary-white);
+    font-size: 32px;
+    font-family: 'Bangers', cursive;
+    text-align: left;
+}
+
+.emailAddress{
+    width: 713px;
+    height: 69px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 35px;
+    padding-top: 20px;
+    box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.9), inset -4px -4px 18px #6C69FF;
+    border-radius: 20px;
+    color: var(--primary-white);
+}
+
+.message{
+    width: 713px;
+    height: 350px;
+    padding-left: 35px;
+    padding-top: 20px;
+    box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.9), inset -4px -4px 18px #6C69FF;
+    border-radius: 20px;
+    color: var(--primary-white);
+}
+
+.home{
+    background-color: var(--background-color);
+    border: none;
+    color:  var(--primary-white);
+    font-size: 24px;
+    font-family: 'Bangers', cursive;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: fit-content;
+}
+
+.homeLink{
+    width: 20px;
+    height: 20px;
+}
+
+.backHome{
+    display: flex;
+    position: relative;
+    font-size: 24px;
+    width: fit-content;
+    margin-bottom: 40px;
+}
+
+.home:hover{
+  font-size: 26px;
+  margin-top: 37px;
+  margin-left: 37px;
+  cursor: pointer;
+}
+
+.info{
+    display: flex;
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.email{
+
+    color: var(--primary-white);
+}
+
+.linkdn{
+    color: var(--primary-white);
+}
+
+.Links{ 
+    margin: auto;
+    margin-top: 0px;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: relative;
+    width: 100%; 
+}
