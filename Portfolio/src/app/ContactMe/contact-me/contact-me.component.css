@@ -103,11 +103,14 @@
 }
 
 .email{
-
+    font-family: Calibri;
+    font-size: 20px;
     color: var(--primary-white);
 }
 
 .linkdn{
+    font-family: Calibri;
+    font-size: 20px;
     color: var(--primary-white);
 }
 
@@ -153,4 +156,12 @@
     width: 713px;
     height: 40px;
     box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.9), inset -4px -4px 18px #6C69FF;
+}
+
+i{
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: white;
 }
