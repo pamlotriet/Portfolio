@@ -87,7 +87,7 @@
     width: 635px;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 950px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 950px) and (max-device-height: 600px){
     .homeAlien{
         display: flex;
         position: fixed;
@@ -105,7 +105,7 @@
     }
   }
 
-  @media only screen and (min-device-width: 951px) and (max-device-width: 1024px) {
+  @media only screen and (min-device-width: 951px) and (max-device-width: 1024px)  and (max-device-height: 800px){
     .homeAlien{
         display: flex;
         position: fixed;
