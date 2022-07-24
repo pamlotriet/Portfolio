@@ -61,28 +61,6 @@
     text-align: left;
 }
 
-.emailAddress{
-    width: 713px;
-    height: 69px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-left: 35px;
-    padding-top: 20px;
-    box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.9), inset -4px -4px 18px #6C69FF;
-    border-radius: 20px;
-    color: var(--primary-white);
-}
-
-.message{
-    width: 713px;
-    height: 350px;
-    padding-left: 35px;
-    padding-top: 20px;
-    box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.9), inset -4px -4px 18px #6C69FF;
-    border-radius: 20px;
-    color: var(--primary-white);
-}
-
 .home{
     background-color: var(--background-color);
     border: none;
@@ -105,7 +83,7 @@
     position: relative;
     font-size: 24px;
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .home:hover{
@@ -144,4 +122,35 @@
     float: left;
     position: relative;
     width: 100%; 
+}
+.messageFrom{
+    outline: none;
+    background-color: var(--background-color);
+    color: var(--primary-white);
+    border: none;
+    border-radius: 20px;
+    resize: none;
+    padding-left: 30px;
+    padding-top: 30px;
+    overflow: hidden;
+    width: 713px;
+    height: 320px;
+    box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.9), inset -4px -4px 18px #6C69FF;
+}
+
+.from{
+    outline: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--background-color);
+    color: var(--primary-white);
+    border: none;
+    border-radius: 20px;
+    resize: none;
+    padding-left: 30px;
+    padding-top: 30px;
+    overflow: hidden;
+    width: 713px;
+    height: 40px;
+    box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.9), inset -4px -4px 18px #6C69FF;
 }
