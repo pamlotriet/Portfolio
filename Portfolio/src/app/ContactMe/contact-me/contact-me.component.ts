@@ -44,6 +44,7 @@ export class ContactMeComponent implements OnInit {
     this.http.post<any>(this.constants.EMAIL_ENDPOINT, { FromMail: this.from, Body: this.body }).subscribe({
       next: data => {
         console.log(data);
+        alert('Email Sent');
     },
       error: error => {
           this.errorMessage = error.message;
