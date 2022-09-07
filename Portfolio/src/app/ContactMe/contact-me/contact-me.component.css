@@ -182,5 +182,12 @@ a{
 
 .send{
     display: flex;
-    align-self: flex-end;
+    width: 188px;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: -4.50319px -4.50319px 7.50532px #6C69FF, 6.00425px 6.00425px 11.258px rgba(0, 0, 0, 0.7);
+    font-size: 24px;
+    color: var(--primary-white);
+    font-family: 'Bangers', cursive;
 }
+
