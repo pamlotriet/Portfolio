@@ -4,6 +4,7 @@ import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './HomePage/home-page/home-page.component';
 import { ContactMeComponent } from './ContactMe/contact-me/contact-me.component';
+import { HttpClientModule } from '@angular/common/http'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +14,8 @@ import { ContactMeComponent } from './ContactMe/contact-me/contact-me.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

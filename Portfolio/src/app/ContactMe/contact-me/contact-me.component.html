@@ -12,10 +12,10 @@
                     <div class="Links">
                        
                         <p class="email">
-                            <a href="mailto:pamela.lotriet@gmail.com"><i class="fa-solid fa-envelope" style="font-size: 20px; color:white;"></i> pamela.lotriet@gmail.com</a>
+                            <a class = "linkText" href="mailto:pamela.lotriet@gmail.com"><i class="fa-solid fa-envelope" style="font-size: 20px; color:white;"></i> pamela.lotriet@gmail.com</a>
                         </p>
                         <p class="linkdn">
-                            <i class="fa-brands fa-linkedin" style="font-size: 20px; color:white;"></i> Pamela Lotriet
+                            <a class = "linkText" (click)="openLink()"><i class="fa-brands fa-linkedin" style="font-size: 20px; color:white;"></i> Pamela Lotriet</a>
                         </p>
                     </div>
                 </div>
@@ -24,11 +24,18 @@
                 <div class="content">
                     <h1 class="heading">CONTACT ME</h1>
                     <div class="emailInfo">
-                            <textarea onfocus="this.value=''" class="from">Your Email Address</textarea>
-                            <textarea onfocus="this.value=''"class="messageFrom">Type your message...</textarea>
+                            <textarea onfocus="this.value=''" class="from" (keyup)="getFrom($event)">From...</textarea>
+                            <textarea onfocus="this.value=''"class="messageFrom" (keyup)="getBody($event)">Type your message...\n' </textarea>
                     </div>
+                    <button class="send" (click)="sendEmails()">
+                         SEND EMAIL
+                    </button>
                 </div>
             </div>
+         <div class="send">
+           
+         </div>
         </div>
+
     </div>
 </div>
