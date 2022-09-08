@@ -1,41 +1,39 @@
 <div class="contactMe">
     <div class="content">
         <div class="backHome">
-            <button class="home" routerLink=""><img class="homeLink" src="assets/AlienIcon.png"/> HOME</button>
+            <button class="home" routerLink=""><img class="homeLink" src="assets/AlienIcon.png" alt="Failed to load image"/> HOME</button>
         </div>
         <div class="info">
             <div class="innerContent">
                 <div class="illustration">
                     <div class="image">
-                        <img class="homeAlien" src="assets/ContactAlien.png">
+                        <img class="homeAlien" src="assets/ContactAlien.png" alt="Failed to load image">
                     </div>
                     <div class="Links">
                        
                         <p class="email">
-                            <a class = "linkText" href="mailto:pamela.lotriet@gmail.com"><i class="fa-solid fa-envelope" style="font-size: 20px; color:white;"></i> pamela.lotriet@gmail.com</a>
+                            <a class = "linkText1" ><em class="fa-solid fa-phone"> style="font-size: 20px; color:white;"></em> 060 5017 253</a>
                         </p>
                         <p class="linkdn">
-                            <a class = "linkText" (click)="openLink()"><i class="fa-brands fa-linkedin" style="font-size: 20px; color:white;"></i> Pamela Lotriet</a>
+                            <a class = "linkText" (click)="openLink()"><em class="fa-brands fa-linkedin" style="font-size: 20px; color:white;"></em> Pamela Lotriet</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="buttons">
-                <div class="content">
+                <div class="contactContent">
                     <h1 class="heading">CONTACT ME</h1>
                     <div class="emailInfo">
-                            <textarea onfocus="this.value=''" class="from" (keyup)="getFrom($event)">From...</textarea>
-                            <textarea onfocus="this.value=''"class="messageFrom" (keyup)="getBody($event)">Type your message...\n' </textarea>
-                    </div>
-                    <button class="send" (click)="sendEmails()">
-                         SEND EMAIL
-                    </button>
+                            <textarea onfocus="this.value=''" class="from" (keyup)="getFrom($event)">Your Email Address...</textarea>
+                            <textarea onfocus="this.value=''"class="messageFrom" (keyup)="getBody($event)">Type your message here...</textarea>
+                            <div class="buttonSend">
+                                <button class="send" (click)="sendEmails()">
+                                    SEND EMAIL
+                               </button>
+                            </div>
+                        </div>
                 </div>
-            </div>
-         <div class="send">
-           
-         </div>
+              
         </div>
-
     </div>
 </div>

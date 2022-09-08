@@ -1,130 +1,309 @@
-.home{
-    display: flex;
-    flex: 1;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow-y: hidden;
+.home {
+  display: flex;
+  flex: 1;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
-.illustration{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    float: left;
-    width: 70%;
-    height: 100%; 
-    margin: auto;
+.illustration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 70%;
+  height: 100%;
+  margin: auto;
 }
 
-.buttons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    float: left;
-    width: 30%;
-    height: 100%;
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 30%;
+  height: 100%;
 }
 
-.homeButtons{
-    position: relative;
-    width: 250px;
-    height: 80px;
-    border-radius: 20px;
-    background-color: var(--background);
-    color: var(--primary-white);
-    box-shadow: -6px -6px 7px #4644BF, 8px 8px 12px rgba(0, 0, 0, 0.7);
-    font-size: 32px;
-    font-weight: 400;
-    font-family: 'Bangers', cursive;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: none;
+.homeButtons {
+  position: relative;
+  width: 250px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: var(--background);
+  color: var(--primary-white);
+  box-shadow: -6px -6px 7px #4644bf, 8px 8px 12px rgba(0, 0, 0, 0.7);
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Bangers", cursive;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: none;
 }
 
-.AboutMe{
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    margin-top: 50%;
+.AboutMe {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 50%;
 }
 
-.MyWork{
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: auto;
+.MyWork {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 
-.ContactMe{
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    margin-bottom: 50%;
+.ContactMe {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 50%;
 }
 
-.alienImage{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+.alienImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.homeButtons:hover{
-    box-shadow: -2px -2px 4px #4644BF, 2px 2px 4px rgba(0, 0, 0, 0.7);
+.homeButtons:hover {
+  box-shadow: -2px -2px 4px #4644bf, 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.homeButtons:focus{
-    box-shadow: inset 2px 4px 12px rgba(0, 0, 0, 0.7), inset -2px -4px 8px #4644BF;
+.homeButtons:focus {
+  box-shadow: inset 2px 4px 12px rgba(0, 0, 0, 0.7), inset -2px -4px 8px #4644bf;
 }
 
-.homeAlien{
+.homeAlien {
+  display: flex;
+  position: fixed;
+  height: 500px;
+  width: 635px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 950px) and (max-device-height: 600px) {
+  .homeAlien {
     display: flex;
     position: fixed;
-    height: 500px;
-    width: 635px;
+    height: 300px;
+    width: 400px;
+  }
+
+  .homeButtons {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    margin-right: 40px;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 950px) and (max-device-height: 600px){
-    .homeAlien{
-        display: flex;
-        position: fixed;
-        height: 300px;
-        width: 400px;
-    }
-
-    .homeButtons{
-        position: relative;
-        width: 150px;
-        height: 50px;
-        margin-right: 40px;
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
+@media only screen and (min-device-width: 951px) and (max-device-width: 1024px) and (max-device-height: 800px) {
+  .homeAlien {
+    display: flex;
+    position: fixed;
+    height: 400px;
+    width: 500px;
   }
 
-  @media only screen and (min-device-width: 951px) and (max-device-width: 1024px)  and (max-device-height: 800px){
-    .homeAlien{
-        display: flex;
-        position: fixed;
-        height: 400px;
-        width: 500px;
-    }
+  .homeButtons {
+    position: relative;
+    width: 200px;
+    height: 80px;
+    margin-right: 40px;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
 
-    .homeButtons{
+/* Phone in portrait */
+@media only screen and (min-device-width: 319px) and (max-device-width: 479px) {
+    
+    .home {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: hidden;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .illustration {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        margin: auto;
+        float: left;
+      }
+      
+      .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        float: left;
+        clear: left;
+      }
+
+    .homeAlien {
+        display: block;
+        position: fixed;
+        height: 230px;
+        width: 300px;
+      }
+    
+      .homeButtons {
         position: relative;
         width: 200px;
-        height: 80px;
-        margin-right: 40px;
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-  }
+        height: 50px;
+        margin-right: 20px;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
 
-  
+      .alienImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+
+      .AboutMe {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+      
+      .MyWork {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .ContactMe {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      
+}
+
+
+/* iPhone landscape and iPad portrait */
+@media only screen and (min-device-width: 480px) and (max-device-width: 640px) {
+   
+    body{
+        overflow:auto
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: hidden;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .illustration {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        margin: auto;
+        float: left;
+      }
+      
+      .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        float: left;
+        clear: left;
+      }
+
+    .homeAlien {
+        display: block;
+        position: fixed;
+        height: 260px;
+        width: 350px;
+      }
+    
+      .homeButtons {
+        position: relative;
+        width: 250px;
+        height: 60px;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .alienImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+
+      .AboutMe {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+      }
+      
+      .MyWork {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .ContactMe {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+}

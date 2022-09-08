@@ -7,7 +7,7 @@ import { Constants } from 'src/app/config/constants';
   styleUrls: ['./contact-me.component.css']
 })
 
-export class ContactMeComponent implements OnInit {
+export class ContactMeComponent {
 
   body: string = "";
   mailTo: string = "";
@@ -18,13 +18,6 @@ export class ContactMeComponent implements OnInit {
   constants: Constants = new Constants;
 
   constructor(private http: HttpClient) {}
-  
-
-  ngOnInit(): void {
-
-   
-  }
-
   
   openLink(){
     window.open("https://www.linkedin.com/in/pamela-lotriet-b4a1a0169/")
