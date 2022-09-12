@@ -616,7 +616,7 @@ a {
   }
 
   .buttonSend {
-    width: 100vw;
+    width: auto;
     height: 100vh;
   }
 
@@ -718,7 +718,7 @@ a {
   }
 
   .buttonSend {
-    width: 100vw;
+    width: auto;
     height: 100vh;
   }
 
@@ -797,12 +797,12 @@ a {
   }
 
   .messageFrom {
-    width: 830px;
+    width: 800px;
     height: 260px;
   }
 
   .from {
-    width: 830px;
+    width: 800px;
     height: 35px;
   }
 
@@ -820,7 +820,7 @@ a {
   }
 
   .buttonSend {
-    width: 100vw;
+    width: 830px;
     height: 100vh;
   }
 

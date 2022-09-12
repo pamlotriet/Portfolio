@@ -1,28 +1,94 @@
 <form class="mywork">
-    <div class="content" *ngIf = "show">
-        <div class="backHome">
-            <button class="home" routerLink=""><img class="homeLink" src="assets/AlienIcon.png"/> HOME</button>
-        </div>
-        <div class="headings">
-            <h1 class = "heading">MY WORK</h1>
-        </div>
-        <div class="info">
-            <div class="projectContainer">
-            
-            </div>
-        </div>
-        <div class="info">
-            <div class="projectContainer">
-            
-            </div>
-        </div>
-        <div class="info">
-            <div class="projectContainer">
-            
-            </div>
-        </div>
+  <div class="content" *ngIf="show">
+    <div class="backHome">
+      <button class="home" routerLink="">
+        <img
+          class="homeLink"
+          src="assets/AlienIcon.png"
+          alt="Error loading image"
+        />
+        HOME
+      </button>
     </div>
-    <div class="spaceship" *ngIf="!show">
-        <img class="spaceshipImg" src="assets/Pam_se_spaceship_Regs.png"  >
-   </div>
+    <div class="headings">
+      <h1 class="heading">MY WORK</h1>
+    </div>
+    <div class="info">
+      <div class="projectContainer">
+        <div class="projectImage">
+          <img
+            src="assets/Pam_Logo.png"
+            alt="Error loading image"
+            class="projectDisplayImage"
+          />
+        </div>
+        <div class="projectDescription">
+          <h1 class="projectHeading">The Smile Foundation Project</h1>
+          <p class="projectParagraph">
+            The problem she was solving was that she had to give people one
+            website where they can view more than one charity and make donations
+            to different charities from one site instead of having to navigate
+            to several different websites. Her responsibilities included
+            designing and creating the frontend for the project, creating a
+            database for the project. She also had to connect the database to
+            the backend of the project and create an endpoint to access the
+            database in the frontend. The technology used here was ASP.Net,
+            .NetCore, SQL Server and VueJS.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="projectContainer">
+        <div class="projectImage">
+          <img
+            src="assets/AdminService.png"
+            alt="Error loading image"
+            class="projectDisplayImage"
+          />
+        </div>
+        <div class="projectDescription">
+            <h1 class="projectHeading">Retro Admin Services</h1>
+            <p class="projectParagraph">The industry of the project was wildlife. The problem Pam was trying to solve was that she had to give regular visitors of South African National Parks an easier way to track the movement of animals in different National Parks so that they can easily locate these animals on their visit at the National Park. Her responsibilities included doing research on integrating relational data with unstructured data, doing data mining from Facebook to get unstructured data from National Park Groups to use for tracking animals, creating the frontend for the artifact, creating a relational database to store relational data, to connect the database to the frontend of the artifact. 
+                The tools that were used for this project are C#, SQL Server, and Python.   
+                </p>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="projectContainer">
+        <div class="projectImage">
+          <img
+            src="assets/Hippo.png"
+            alt="Error loading image"
+            class="projectDisplayImage"
+          />
+        </div>
+        <div class="projectDescription">
+          <h1 class="projectHeading">Advisory System Rewrite</h1>
+          <p class="projectParagraph">
+            The hippo advisory system is a platform used to assist and advise
+            customers on the best health insurance package available for them.
+            The goal of this project is to rewrite the system that currently
+            exists to make it more efficient, accessible and user friendly.
+            Pam’s role in this project is to perform updates and queries on the
+            database and to create endpoints that can be used by the frontend
+            team to access the data they need from the database. Pam is also
+            responsible for updating the queues associated with each API call
+            and to occasionally store certain information in a cache.
+            Technologies used for this project include .net core, SQL Server,
+            RabbitMQ, Redis, Rancher, Magic Draw, Azure Functions, Kong, Docker,
+            Xunit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spaceship" *ngIf="!show">
+    <img
+      class="spaceshipImg"
+      src="assets/Pam_se_spaceship_Regs.png"
+      alt="Error loading image"
+    />
+  </div>
 </form>
