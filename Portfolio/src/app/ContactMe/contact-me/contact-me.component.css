@@ -163,7 +163,7 @@
   padding-top: 30px;
   overflow: hidden;
   width: 713px;
-  height: 35px;
+  height: 60px;
   box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.9),
     inset -4px -4px 18px #6c69ff !important;
 }
@@ -263,8 +263,6 @@ a {
   100% { transform: rotate(360deg); }
 }
 
-
-
 @media only screen and (min-width: 821px) and (max-width: 1021px) {
   .spaceship {
     position: relative;
@@ -319,7 +317,7 @@ a {
 
   .from {
     width: 600px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -430,7 +428,7 @@ a {
 
   .from {
     width: 240px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -541,7 +539,7 @@ a {
 
   .from {
     width: 300px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -652,7 +650,7 @@ a {
 
   .from {
     width: 400px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -763,7 +761,7 @@ a {
 
   .from {
     width: 600px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -877,7 +875,7 @@ a {
 
   .from {
     width: 800px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -991,7 +989,7 @@ a {
 
   .from {
     width: 500px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -1105,7 +1103,7 @@ a {
 
   .from {
     width: 600px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -1214,7 +1212,7 @@ a {
 
   .from {
     width: 900px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -1323,7 +1321,7 @@ a {
 
   .from {
     width: 900px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -1433,7 +1431,7 @@ a {
 
   .from {
     width: 240px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -1543,7 +1541,7 @@ a {
 
   .from {
     width: 300px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -1653,7 +1651,7 @@ a {
 
   .from {
     width: 400px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {
@@ -1763,7 +1761,7 @@ a {
 
   .from {
     width: 600px;
-    height: 35px;
+    height: 60px;
   }
 
   .home {

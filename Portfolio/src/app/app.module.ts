@@ -6,6 +6,7 @@ import { HomePageComponent } from './HomePage/home-page/home-page.component';
 import { ContactMeComponent } from './ContactMe/contact-me/contact-me.component';
 import { HttpClientModule } from '@angular/common/http'; 
 import {ToastModule} from 'primeng/toast';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import {ToastModule} from 'primeng/toast';
     AppRoutingModule,
     HttpClientModule,
     ToastModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

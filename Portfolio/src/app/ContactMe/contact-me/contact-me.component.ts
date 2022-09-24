@@ -1,11 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Constants } from 'src/app/config/constants';
+import {MessageService} from 'primeng/api';
 
 @Component({
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.css'],
+  providers: [MessageService],
 })
 export class ContactMeComponent {
   body: string = '';
@@ -19,7 +21,7 @@ export class ContactMeComponent {
 
   constants: Constants = new Constants();
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private messageService: MessageService) {}
 
   openLink() {
     window.open('https://www.linkedin.com/in/pamela-lotriet-b4a1a0169/');
@@ -47,15 +49,26 @@ export class ContactMeComponent {
       .subscribe({
         next: (data) => {
           this.spinner = false;
-          this.completed = true;
+          this.showSuccess();
+          setTimeout(()=>{                           // <<<---using ()=> syntax
+            this.completed = false;
+        }, 10000000);
+
+          
         },
         error: (error) => {
           this.errorMessage = error.message;
           console.error('There was an error!', error);
         },
       });
+
+      
   }
 
+  showSuccess(){
+    this.completed = true;
+    this.messageService.add({severity:'success', summary: 'Message Sent', detail: 'Your message has successfully been sent', key:'myToast'});
+  }
 
   
 }
