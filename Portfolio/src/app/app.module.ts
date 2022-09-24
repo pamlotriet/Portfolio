@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './HomePage/home-page/home-page.component';
 import { ContactMeComponent } from './ContactMe/contact-me/contact-me.component';
 import { HttpClientModule } from '@angular/common/http'; 
+import {ToastModule} from 'primeng/toast';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

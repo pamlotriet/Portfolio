@@ -1,4 +1,8 @@
 <div class="contactMe">
+    <div class="spinnerBackground" *ngIf="spinner">
+        <div class="spinnerOverlay"></div>
+        <div class="loader"></div>
+    </div>
     <div class="content">
         <div class="backHome">
             <button class="home" routerLink=""><img class="homeLink" src="assets/AlienIcon.png" alt="Failed to load image"/> HOME</button>
@@ -33,7 +37,6 @@
                             </div>
                         </div>
                 </div>
-              
         </div>
     </div>
 </div>

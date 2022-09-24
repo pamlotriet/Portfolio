@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Constants } from 'src/app/config/constants';
+
 @Component({
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html',
@@ -12,6 +13,9 @@ export class ContactMeComponent {
   postId: any;
   errorMessage: any;
   from: any;
+  spinner: boolean = false;
+  disabled: boolean = false;
+  completed: boolean = false;
 
   constants: Constants = new Constants();
 
@@ -32,6 +36,9 @@ export class ContactMeComponent {
   }
 
   sendEmails() {
+    this.spinner = true;
+    this.disabled = true;
+
     this.http
       .post<any>(this.constants.EMAIL_ENDPOINT, {
         FromMail: this.from,
@@ -39,8 +46,8 @@ export class ContactMeComponent {
       })
       .subscribe({
         next: (data) => {
-          console.log(data);
-          alert('Email Sent');
+          this.spinner = false;
+          this.completed = true;
         },
         error: (error) => {
           this.errorMessage = error.message;
@@ -48,4 +55,7 @@ export class ContactMeComponent {
         },
       });
   }
+
+
+  
 }
