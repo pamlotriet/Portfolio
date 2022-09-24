@@ -29,10 +29,10 @@
                 <div class="contactContent">
                     <h1 class="heading">CONTACT ME</h1>
                     <div class="emailInfo">
-                            <textarea onfocus="this.value=''" class="from" (keyup)="getFrom($event)">Your Email Address...</textarea>
-                            <textarea onfocus="this.value=''"class="messageFrom" (keyup)="getBody($event)">Type your message here...</textarea>
+                            <textarea onfocus="this.value=''" class="from" (keyup)="getFrom($event)">{{emailAddress}}</textarea>
+                            <textarea onfocus="this.value=''"class="messageFrom" (keyup)="getBody($event)">{{message}}</textarea>
                             <div class="buttonSend">
-                                <button class="send" (click)="sendEmails()">
+                                <button class="send" type="submit" (click)="sendEmails()">
                                     SEND EMAIL
                                </button>
                             </div>

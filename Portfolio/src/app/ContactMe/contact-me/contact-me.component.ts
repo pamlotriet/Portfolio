@@ -15,6 +15,8 @@ export class ContactMeComponent {
   postId: any;
   errorMessage: any;
   from: any;
+  emailAddress: string = "Your Email Address...";
+  message: string = "Type your message here...";
   spinner: boolean = false;
   disabled: boolean = false;
   completed: boolean = false;
@@ -52,9 +54,8 @@ export class ContactMeComponent {
           this.showSuccess();
           setTimeout(()=>{                           // <<<---using ()=> syntax
             this.completed = false;
-        }, 10000000);
-
-          
+            window.location.reload();
+        }, 3000);
         },
         error: (error) => {
           this.errorMessage = error.message;

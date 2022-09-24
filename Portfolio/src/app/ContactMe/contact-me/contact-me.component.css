@@ -228,9 +228,9 @@ a {
   width: 120px;
   height: 120px;
   margin: -76px 0 0 -76px;
-  border: 16px solid #f3f3f3;
+  border: 16px solid whitesmoke;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid var(--background);
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -238,7 +238,6 @@ a {
 .spinnerBackground{
   width: 100vw;
   height: 100vh;
-  background-color: aquamarine;
 }
 
 .spinnerOverlay{
