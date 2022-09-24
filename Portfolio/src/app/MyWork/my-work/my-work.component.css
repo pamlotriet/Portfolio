@@ -32,9 +32,6 @@
 }
 
 .home:hover{
-  font-size: 26px;
-  margin-top: 37px;
-  margin-left: 37px;
   cursor: pointer;
 }
 
@@ -123,14 +120,19 @@ flex-direction: row;
 
 .projectHeading{
   color: var(--primary-white);
+  font-family: 'Bangers', cursive;
+  font-size: 36px;
 }
 
 .projectParagraph{
   color: var(--primary-white);
   text-align: justify;
+  font-size: 16px;
+  font-family: Calibri;
 }
 
 .projectDisplayImage{
-  width: 345px;
-  height: 185px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
 }

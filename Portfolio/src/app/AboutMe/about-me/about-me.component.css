@@ -26,7 +26,7 @@
 }
 
 .home {
-  background-color: var(--background-color);
+  background-color: var(--background);
   border: none;
   color: var(--primary-white);
   font-size: 24px;
@@ -44,7 +44,7 @@
 
 .backHome {
   display: flex;
-background-color: var(--background-color);
+background-color: var(--background);
   font-size: 24px;
   width: fit-content;
   animation: fadeIn 0.5s;
@@ -62,9 +62,6 @@ background-color: var(--background-color);
 }
 
 .home:hover {
-  font-size: 26px;
-  margin-top: 37px;
-  margin-left: 37px;
   cursor: pointer;
 }
 
@@ -113,7 +110,7 @@ background-color: var(--background-color);
 .aboutText::-webkit-scrollbar-track {
   width: 15px;
   border-radius: 20px;
-  background-color: var(--background-color);
+  background-color: var(--background);
   box-shadow: -0.5px -0.5px 1px rgba(108, 105, 255, 0.25),
     inset 2px 4px 12px rgba(0, 0, 0, 0.7), inset -2px -4px 8px #6c69ff;
 }
@@ -121,7 +118,7 @@ background-color: var(--background-color);
 .aboutText::-webkit-scrollbar-thumb {
   width: 15px;
   border-radius: 20px;
-  background-color: var(--background-color);
+  background-color: var(--background);
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25), inset 0px -2px 6px #0f0e3e,
     inset -0.5px -2px 8px #0f0e3e, inset 2px 2px 4px #0f0e3e,
     inset 2px -4px 10px rgba(108, 105, 255, 0.8), inset 3px 6px 10px #6c69ff;
@@ -177,7 +174,7 @@ button {
 }
 
 /* Phone portrait */
-@media only screen and (min-device-width: 319px) and (max-device-width: 480px) and (orientation: portrait) {
+@media only screen and (min-device-width: 319px) and (max-device-width: 767px) and (orientation: portrait) {
   .spaceship{
     position: relative;
     justify-content: center;
@@ -204,6 +201,7 @@ button {
     width: 100vw;
     margin-left: 0px;
     position: sticky;
+    margin-top: 100px;
   }
 
   .innerContent {
@@ -226,7 +224,12 @@ button {
 
   .backHome {
     margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
   }
+
   .content {
     width: 100vw;
     height: 100vh;
@@ -263,8 +266,11 @@ button {
   }
 
   .home {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
   }
 
   .aboutparagraph {
@@ -274,7 +280,18 @@ button {
 }
 
 /* phone landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 940px) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 1000px) and (orientation: landscape) {
+  .spaceship{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+  
   .aboutme {
     display: flex;
     flex-direction: column;
@@ -290,6 +307,7 @@ button {
     width: 100vw;
     margin-left: 0px;
     position: sticky;
+    margin-top: 100px;
   }
 
   .innerContent {
@@ -313,7 +331,12 @@ button {
 
   .backHome {
     margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
   }
+
   .content {
     width: 100vw;
     height: 100vh;
@@ -349,9 +372,12 @@ button {
     height: 360px;
   }
 
-  .home {
-    margin-top: 20px;
-    margin-left: 20px;
+   .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
   }
 
   .aboutparagraph {
@@ -384,6 +410,7 @@ button {
     width: 100vw;
     margin-left: 0px;
     position: sticky;
+    margin-top: 100px;
   }
 
   .innerContent {
@@ -407,7 +434,12 @@ button {
 
   .backHome {
     margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
   }
+
   .content {
     width: 100vw;
     height: 100vh;
@@ -444,8 +476,11 @@ button {
   }
 
   .home {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
   }
 
   .aboutparagraph {
@@ -459,3 +494,644 @@ button {
     align-items: center;
   }
 }
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1260px){
+  .spaceship{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    position: sticky;
+    margin-top: 100px;
+  }
+
+  .innerContent {
+    display: flex;
+    overflow-y: scroll !important;
+    width: 100vw;
+    height: 0%;
+    flex-direction: column-reverse;
+  }
+
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 90%;
+    margin-top: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: none;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 490px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8),
+      inset -4px -4px 15px #4644bf;
+  }
+
+  .MyPhoto {
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 340px;
+    height: 460px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .aboutparagraph {
+    font-size: 14px;
+    text-align: justify;
+    width: 100%;
+  }
+
+  .spaceship{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 679px) and (max-width: 821px){
+  .spaceship{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    position: sticky;
+    margin-top: 100px;
+  }
+
+  .innerContent {
+    display: flex;
+    overflow-y: scroll !important;
+    width: 100vw;
+    height: 0%;
+    flex-direction: column-reverse;
+  }
+
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 90%;
+    margin-top: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: none;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 490px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8),
+      inset -4px -4px 15px #4644bf;
+  }
+
+  .MyPhoto {
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 340px;
+    height: 460px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .aboutparagraph {
+    font-size: 14px;
+    text-align: justify;
+    width: 100%;
+  }
+
+  .spaceship{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1021px){
+  .spaceship{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    position: sticky;
+    margin-top: 100px;
+  }
+
+  .innerContent {
+    display: flex;
+    overflow-y: scroll !important;
+    width: 100vw;
+    height: 0%;
+    flex-direction: column-reverse;
+  }
+
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 90%;
+    margin-top: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: none;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 490px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8),
+      inset -4px -4px 15px #4644bf;
+  }
+
+  .MyPhoto {
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 340px;
+    height: 460px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .aboutparagraph {
+    font-size: 14px;
+    text-align: justify;
+    width: 100%;
+  }
+
+  .spaceship{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 380px){
+  .spaceship{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+  
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    position: sticky;
+    margin-top: 100px;
+  }
+
+  .innerContent {
+    display: flex;
+    overflow-y: scroll !important;
+    width: 100vw;
+    height: 0%;
+    flex-direction: column-reverse;
+  }
+
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 80vw;
+    margin-top: 20px;
+    overflow-y: hidden;
+    max-height: none;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 390px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8),
+      inset -4px -4px 15px #4644bf;
+  }
+
+  .MyPhoto {
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 240px;
+    height: 360px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .aboutparagraph {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+  .spaceship{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+  
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    position: sticky;
+    margin-top: 100px;
+  }
+
+  .innerContent {
+    display: flex;
+    overflow-y: scroll !important;
+    width: 100vw;
+    height: 0%;
+    flex-direction: column-reverse;
+  }
+
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 80vw;
+    margin-top: 20px;
+    overflow-y: hidden;
+    max-height: none;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 390px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8),
+      inset -4px -4px 15px #4644bf;
+  }
+
+  .MyPhoto {
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 240px;
+    height: 360px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .aboutparagraph {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 678px){
+  .spaceship{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+  
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    position: sticky;
+    margin-top: 100px;
+  }
+
+  .innerContent {
+    display: flex;
+    overflow-y: scroll !important;
+    width: 100vw;
+    height: 0%;
+    flex-direction: column-reverse;
+  }
+
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 80vw;
+    margin-top: 20px;
+    overflow-y: hidden;
+    max-height: none;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 390px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8),
+      inset -4px -4px 15px #4644bf;
+  }
+
+  .MyPhoto {
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 240px;
+    height: 360px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .aboutparagraph {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+

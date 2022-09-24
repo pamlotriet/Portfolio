@@ -61,7 +61,7 @@
 }
 
 .home {
-  background-color: var(--background-color);
+  background-color: var(--background);
   border: none;
   color: var(--primary-white);
   font-size: 24px;
@@ -83,12 +83,10 @@
   font-size: 24px;
   width: fit-content;
   margin-bottom: 60px;
+  background-color: var(--background);
 }
 
 .home:hover {
-  font-size: 26px;
-  margin-top: 37px;
-  margin-left: 37px;
   cursor: pointer;
 }
 
@@ -212,12 +210,17 @@ a {
   width: 740px;
 }
 
-/* Phone portrait */
-@media only screen and (min-device-width: 319px) and (max-device-width: 358px) and (orientation: portrait) {
+@media only screen and (min-width: 821px) and (max-width: 1021px){
   .spaceship {
     position: relative;
     justify-content: center;
     align-items: center;
+  }
+
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+    height: auto;
   }
 
   .spaceshipImg {
@@ -232,46 +235,44 @@ a {
 
   .info {
     display: flex;
-    flex-direction: column-reverse;
-    position: fixed;
+    flex-direction: column;
     animation: fadeIn 5s;
     animation-fill-mode: backwards;
     width: 100vw;
     margin-left: 0px;
-    position: sticky;
     overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
   }
 
   .innerContent {
     display: flex;
     width: 100vw;
-    position: sticky;
+    justify-content: flex-end;
   }
 
   .illustration {
     position: sticky;
+    height: auto;
     width: 100%;
-    height: 100vh;
-  }
-
-  .buttons {
-    width: 100%;
-    position: sticky;
   }
 
   .messageFrom {
-    width: 270px;
+    width: 600px;
     height: 260px;
   }
 
   .from {
-    width: 270px;
+    width: 600px;
     height: 35px;
   }
 
   .home {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
   }
 
   .send {
@@ -291,12 +292,17 @@ a {
   }
 
   .backHome {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
   }
 
   .Links {
     position: sticky;
-    bottom: 0;
+    margin: 0;
+    margin-top: 300px!important;
   }
 
   .image {
@@ -306,28 +312,26 @@ a {
     visibility: hidden;
   }
 
-  .contactContent {
-    height: auto;
-  }
-
-  .spaceship {
-    position: relative;
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .spaceshipImg {
-    width: 377px;
-    height: 200px;
   }
 }
 
 /* Phone portrait */
-@media only screen and (min-device-width: 359px) and (max-device-width: 400px) and (orientation: portrait) {
+@media only screen and (min-device-width: 319px) and (max-device-width: 380px) and (orientation: portrait) {
   .spaceship {
     position: relative;
     justify-content: center;
     align-items: center;
+  }
+
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+    height: auto;
   }
 
   .spaceshipImg {
@@ -342,46 +346,44 @@ a {
 
   .info {
     display: flex;
-    flex-direction: column-reverse;
-    position: fixed;
+    flex-direction: column;
     animation: fadeIn 5s;
     animation-fill-mode: backwards;
     width: 100vw;
     margin-left: 0px;
-    position: sticky;
     overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
   }
 
   .innerContent {
     display: flex;
     width: 100vw;
-    position: sticky;
+    justify-content: flex-end;
   }
 
   .illustration {
     position: sticky;
+    height: auto;
     width: 100%;
-    height: 100vh;
-  }
-
-  .buttons {
-    width: 100%;
-    position: sticky;
   }
 
   .messageFrom {
-    width: 320px;
+    width: 240px;
     height: 260px;
   }
 
   .from {
-    width: 320px;
+    width: 240px;
     height: 35px;
   }
 
   .home {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
   }
 
   .send {
@@ -401,12 +403,17 @@ a {
   }
 
   .backHome {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
   }
 
   .Links {
     position: sticky;
-    bottom: 0;
+    margin: 0;
+    margin-top: 300px!important;
   }
 
   .image {
@@ -416,28 +423,26 @@ a {
     visibility: hidden;
   }
 
-  .contactContent {
-    height: auto;
-  }
-
-  .spaceship {
-    position: relative;
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .spaceshipImg {
-    width: 377px;
-    height: 200px;
   }
 }
 
 /* Phone portrait */
-@media only screen and (min-device-width: 400px) and (max-device-width: 480px) and (orientation: portrait) {
+@media only screen and (min-device-width: 381px) and (max-device-width: 480px) and (orientation: portrait) {
   .spaceship {
     position: relative;
     justify-content: center;
     align-items: center;
+  }
+
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+    height: auto;
   }
 
   .spaceshipImg {
@@ -452,46 +457,44 @@ a {
 
   .info {
     display: flex;
-    flex-direction: column-reverse;
-    position: fixed;
+    flex-direction: column;
     animation: fadeIn 5s;
     animation-fill-mode: backwards;
     width: 100vw;
     margin-left: 0px;
-    position: sticky;
     overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
   }
 
   .innerContent {
     display: flex;
     width: 100vw;
-    position: sticky;
+    justify-content: flex-end;
   }
 
   .illustration {
     position: sticky;
+    height: auto;
     width: 100%;
-    height: 100vh;
-  }
-
-  .buttons {
-    width: 100%;
-    position: sticky;
   }
 
   .messageFrom {
-    width: 360px;
+    width: 300px;
     height: 260px;
   }
 
   .from {
-    width: 360px;
+    width: 300px;
     height: 35px;
   }
 
   .home {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
   }
 
   .send {
@@ -511,12 +514,17 @@ a {
   }
 
   .backHome {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
   }
 
   .Links {
     position: sticky;
-    bottom: 0;
+    margin: 0;
+    margin-top: 50px!important;
   }
 
   .image {
@@ -526,12 +534,250 @@ a {
     visibility: hidden;
   }
 
-  .contactContent {
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Phone portrait */
+@media only screen and (min-device-width: 481px) and (max-device-width: 678px) and (orientation: portrait) {
+  .spaceship {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactContent{
+    justify-content: center;
+    align-items: center;
     height: auto;
   }
 
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+
+  .homeAlien {
+    width: 100px;
+    height: 148px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
+  }
+
+  .innerContent {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+  }
+
+  .illustration {
+    position: sticky;
+    height: auto;
+    width: 100%;
+  }
+
+  .messageFrom {
+    width: 400px;
+    height: 260px;
+  }
+
+  .from {
+    width: 400px;
+    height: 35px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .send {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .buttonSend {
+    width: 100%;
+  }
+
+  .emailInfo {
+    width: 95%;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .Links {
+    position: sticky;
+    margin: 0;
+    margin-top: 300px!important;
+  }
+
+  .image {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Phone portrait */
+@media only screen and (min-device-width: 679px) and (max-device-width: 821px) and (orientation: portrait) {
   .spaceship {
     position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+
+  .homeAlien {
+    width: 100px;
+    height: 148px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
+  }
+
+  .innerContent {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+  }
+
+  .illustration {
+    position: sticky;
+    height: auto;
+    width: 100%;
+  }
+
+  .messageFrom {
+    width: 600px;
+    height: 260px;
+  }
+
+  .from {
+    width: 600px;
+    height: 35px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .send {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .buttonSend {
+    width: 100%;
+  }
+
+  .emailInfo {
+    width: 95%;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .Links {
+    position: sticky;
+    margin: 0;
+    margin-top: 300px!important;
+  }
+
+  .image {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+/* landscape */
+@media only screen and (min-device-width: 822px) and (max-device-width: 1022px) and (orientation: landscape) {
+  .spaceship {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons{
+    margin-top: 100px;
+  }
+
+  .contactContent{
     justify-content: center;
     align-items: center;
   }
@@ -539,6 +785,97 @@ a {
   .spaceshipImg {
     width: 377px;
     height: 200px;
+  }
+
+  .homeAlien {
+    width: 100px;
+    height: 148px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
+  }
+
+  .innerContent {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+  }
+
+  .illustration {
+    position: sticky;
+    height: auto;
+    width: 100%;
+  }
+
+  .messageFrom {
+    width: 800px;
+    height: 260px;
+  }
+
+  .from {
+    width: 800px;
+    height: 35px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .send {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .buttonSend {
+    width: 100%;
+  }
+
+  .emailInfo {
+    width: 95%;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .Links {
+    position: sticky;
+    margin: 0;
+    margin-top: 300px!important;
+  }
+
+  .image {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -551,6 +888,14 @@ a {
     align-items: center;
   }
 
+  .buttons{
+    margin-top: 100px;
+  }
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+  }
+
   .spaceshipImg {
     width: 377px;
     height: 200px;
@@ -563,48 +908,44 @@ a {
 
   .info {
     display: flex;
-    flex-direction: column-reverse;
-    position: fixed;
+    flex-direction: column;
     animation: fadeIn 5s;
     animation-fill-mode: backwards;
     width: 100vw;
     margin-left: 0px;
-    position: sticky;
     overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
   }
 
   .innerContent {
     display: flex;
     width: 100vw;
-    position: sticky;
+    justify-content: flex-end;
   }
 
   .illustration {
     position: sticky;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .buttons {
+    height: auto;
     width: 100%;
-    position: sticky;
   }
 
   .messageFrom {
-    width: 610px;
+    width: 500px;
     height: 260px;
   }
 
   .from {
-    width: 610px;
+    width: 500px;
     height: 35px;
   }
 
   .home {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
   }
 
   .send {
@@ -616,8 +957,7 @@ a {
   }
 
   .buttonSend {
-    width: auto;
-    height: 100vh;
+    width: 100%;
   }
 
   .emailInfo {
@@ -625,538 +965,809 @@ a {
   }
 
   .backHome {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
   }
 
   .Links {
     position: sticky;
-    margin-bottom: 100px;
+    margin: 0;
+    margin-top: 300px!important;
   }
 
   .image {
     align-items: center;
     justify-content: center;
+    position: fixed;
     visibility: hidden;
   }
 
-  .contactContent {
-    height: auto;
-  }
-
-  .spaceship {
-    position: relative;
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .spaceshipImg {
-    width: 377px;
-    height: 200px;
   }
 }
 
 /* Bigger phone landscape */
 @media only screen and (min-device-width: 681px) and (max-device-width: 800px) and (orientation: landscape) {
 
-  .homeAlien {
-    width: 100px;
-    height: 148px;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column-reverse;
-    position: fixed;
-    animation: fadeIn 5s;
-    animation-fill-mode: backwards;
-    width: 100vw;
-    margin-left: 0px;
-    position: sticky;
-    overflow-y: scroll !important;
-  }
-
-  .innerContent {
-    display: flex;
-    width: 100vw;
-    position: sticky;
-  }
-
-  .illustration {
-    position: sticky;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .buttons {
-    width: 100vw;
-    position: sticky;
-  }
-
-  .messageFrom {
-    width: 660px;
-    height: 260px;
-  }
-
-  .from {
-    width: 660px;
-    height: 35px;
-  }
-
-  .home {
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-
-  .send {
-    margin-top: 15px;
-    width: 120px;
-    height: 35px;
-    font-size: 14px;
-    border: none;
-  }
-
-  .buttonSend {
-    width: auto;
-    height: 100vh;
-  }
-
-  .emailInfo {
-    width: 95%;
-  }
-
-  .backHome {
-    margin-bottom: 10px;
-  }
-
-  .Links {
-    position: sticky;
-    margin-bottom: 100px;
-  }
-
-  .image {
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-  }
-
-  .contactContent {
-    height: auto;
-  }
-
   .spaceship {
     position: relative;
     justify-content: center;
     align-items: center;
   }
 
-  .spaceshipImg {
-    width: 377px;
-    height: 200px;
-  }
-}
-
-/* Bigger phone landscape */
-@media only screen and (min-device-width: 800px) and (max-device-width: 950px) and (orientation: landscape) {
-
-  .homeAlien {
-    width: 100px;
-    height: 148px;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column-reverse;
-    position: fixed;
-    animation: fadeIn 5s;
-    animation-fill-mode: backwards;
-    width: 100vw;
-    margin-left: 0px;
-    position: sticky;
-    overflow-y: scroll !important;
-  }
-
-  .innerContent {
-    display: flex;
-    width: 100vw;
-    position: sticky;
-  }
-
-  .illustration {
-    position: sticky;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .buttons {
-    width: 100%;
-    position: sticky;
-  }
-
-  .messageFrom {
-    width: 800px;
-    height: 260px;
-  }
-
-  .from {
-    width: 800px;
-    height: 35px;
-  }
-
-  .home {
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-
-  .send {
-    margin-top: 15px;
-    width: 120px;
-    height: 35px;
-    font-size: 14px;
-    border: none;
-  }
-
-  .buttonSend {
-    width: 830px;
-    height: 100vh;
-  }
-
-  .emailInfo {
-    width: 95%;
-  }
-
-  .backHome {
-    margin-bottom: 10px;
-  }
-
-  .Links {
-    position: sticky;
-    margin-bottom: 100px;
-  }
-
-  .image {
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-  }
-
-  .contactContent {
-    height: auto;
-  }
-
-  .spaceship {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .spaceshipImg {
-    width: 377px;
-    height: 200px;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 800px) and (orientation: portrait){
-  .homeAlien {
-    width: 100px;
-    height: 148px;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column-reverse;
-    position: fixed;
-    animation: fadeIn 5s;
-    animation-fill-mode: backwards;
-    width: 100vw;
-    margin-left: 0px;
-    position: sticky;
-    overflow-y: scroll !important;
-  }
-
-  .innerContent {
-    display: flex;
-    width: 100vw;
-    position: sticky;
-  }
-
-  .illustration {
-    position: sticky;
-    width: 100vw;
-    height: 0;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .buttons {
-    width: 100%;
-    position: sticky;
-  }
-
-  .messageFrom {
-    width: 720px;
-    height: 400px;
-  }
-
-  .from {
-    width: 720px;
-    height: 35px;
-  }
-
-  .home {
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-
-  .send {
-    margin-top: 15px;
-    width: 120px;
-    height: 35px;
-    font-size: 14px;
-    border: none;
-  }
-  .emailInfo {
-    width: 95%;
-  }
-
-  .backHome {
-    margin-bottom: 10px;
-  }
-
-  .Links {
-    position: sticky;
+  .buttons{
     margin-top: 100px;
-    margin-bottom: 100px;
-  }
-
-  .image {
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-  }
-
-  .contactContent {
-    height: auto;
-  }
-
-  .spaceship {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .spaceshipImg {
-    width: 377px;
-    height: 200px;
-  }
-}
-
-@media only screen and (min-device-width: 801px) and (max-device-width: 950px) and (orientation: portrait){
-  .homeAlien {
-    width: 100px;
-    height: 148px;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column-reverse;
-    position: fixed;
-    animation: fadeIn 5s;
-    animation-fill-mode: backwards;
-    width: 100vw;
-    margin-left: 0px;
-    position: sticky;
-    overflow-y: scroll !important;
-  }
-
-  .innerContent {
-    display: flex;
-    width: 100vw;
-    position: sticky;
-  }
-
-  .illustration {
-    position: sticky;
-    width: 100vw;
-    height: 0;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .buttons {
-    width: 100%;
-    position: sticky;
-  }
-
-  .messageFrom {
-    width: 760px;
-    height: 400px;
-  }
-
-  .from {
-    width: 760px;
-    height: 35px;
-  }
-
-  .home {
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-
-  .send {
-    margin-top: 15px;
-    width: 120px;
-    height: 35px;
-    font-size: 14px;
-    border: none;
-  }
-  .emailInfo {
-    width: 95%;
-  }
-
-  .backHome {
-    margin-bottom: 10px;
-  }
-
-  .Links {
-    position: sticky;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-
-  .image {
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-  }
-
-  .contactContent {
-    height: auto;
-  }
-
-  .spaceship {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .spaceshipImg {
-    width: 377px;
-    height: 200px;
-  }
-}
-
-@media only screen and (min-device-width: 1023px) and (max-device-width: 1100px) and (orientation: landscape){
-  
-  .innerContent {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: 100vh;
   }
   
-  .illustration {
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+
+  .homeAlien {
+    width: 100px;
+    height: 148px;
+  }
+
+  .info {
     display: flex;
     flex-direction: column;
-    float: left;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: left;
-    width: 60%;
-    height: 100vh;
-  }
-  
-  .homeAlien {
-    height: 300px;
-    width: 200px;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
   }
 
-  .image {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .messageFrom {
-    width: 570px;
-  }
-  
-  .from {
-    width: 570px;
-  }
-
-  .buttonSend {
-    width: auto;
-  }
-  
-}
-
-@media only screen and (min-device-width: 1100px) and (max-device-width: 1200px) and (orientation: landscape){
-  
   .innerContent {
     display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: 100vh;
-  }
-  
-  .illustration {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: left;
-    width: 60%;
-    height: 100vh;
-  }
-  
-  .homeAlien {
-    height: 300px;
-    width: 200px;
+    width: 100vw;
+    justify-content: flex-end;
   }
 
-  .image {
-    justify-content: center;
-    align-items: center;
+  .illustration {
+    position: sticky;
+    height: auto;
+    width: 100%;
   }
 
   .messageFrom {
-    width: 570px;
-  }
-  
-  .from {
-    width: 570px;
-  }
-
-  .buttonSend {
-    display: flex;
-    flex-direction: row-reverse;
     width: 600px;
+    height: 260px;
   }
+
+  .from {
+    width: 600px;
+    height: 35px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .send {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .buttonSend {
+    width: 100%;
+  }
+
+  .emailInfo {
+    width: 95%;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .Links {
+    position: sticky;
+    margin: 0;
+    margin-top: 300px!important;
+  }
+
+  .image {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1260px){
   
+  .spaceship {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+
+  .homeAlien {
+    width: 100px;
+    height: 148px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
+  }
+
+  .innerContent {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+  }
+
+  .illustration {
+    position: sticky;
+    height: auto;
+    width: 100%;
+  }
+
+  .messageFrom {
+    width: 900px;
+    height: 260px;
+  }
+
+  .from {
+    width: 900px;
+    height: 35px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .send {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .buttonSend {
+    width: 100%;
+  }
+
+  .emailInfo {
+    width: 95%;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .Links {
+    position: sticky;
+    margin: 0;
+    margin-top: 300px!important;
+  }
+
+  .image {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+}
+
+@media only screen and (min-width: 1022px) and (max-width: 1099px){
+  
+  .spaceship {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+
+  .homeAlien {
+    width: 100px;
+    height: 148px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
+  }
+
+  .innerContent {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+  }
+
+  .illustration {
+    position: sticky;
+    height: auto;
+    width: 100%;
+  }
+
+  .messageFrom {
+    width: 900px;
+    height: 260px;
+  }
+
+  .from {
+    width: 900px;
+    height: 35px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .send {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .buttonSend {
+    width: 100%;
+  }
+
+  .emailInfo {
+    width: 95%;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .Links {
+    position: sticky;
+    margin: 0;
+    margin-top: 300px!important;
+  }
+
+  .image {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+}
+
+@media only screen and (min-width: 319px) and (max-width: 380px){
+  .spaceship {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+
+  .homeAlien {
+    width: 100px;
+    height: 148px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
+  }
+
+  .innerContent {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+  }
+
+  .illustration {
+    position: sticky;
+    height: auto;
+    width: 100%;
+  }
+
+  .messageFrom {
+    width: 240px;
+    height: 260px;
+  }
+
+  .from {
+    width: 240px;
+    height: 35px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .send {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .buttonSend {
+    width: 100%;
+  }
+
+  .emailInfo {
+    width: 95%;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .Links {
+    position: sticky;
+    margin: 0;
+    margin-top: 300px!important;
+  }
+
+  .image {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+  .spaceship {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+
+  .homeAlien {
+    width: 100px;
+    height: 148px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
+  }
+
+  .innerContent {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+  }
+
+  .illustration {
+    position: sticky;
+    height: auto;
+    width: 100%;
+  }
+
+  .messageFrom {
+    width: 300px;
+    height: 260px;
+  }
+
+  .from {
+    width: 300px;
+    height: 35px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .send {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .buttonSend {
+    width: 100%;
+  }
+
+  .emailInfo {
+    width: 95%;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .Links {
+    position: sticky;
+    margin: 0;
+    margin-top: 50px!important;
+  }
+
+  .image {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 678px){
+  .spaceship {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+
+  .homeAlien {
+    width: 100px;
+    height: 148px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
+  }
+
+  .innerContent {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+  }
+
+  .illustration {
+    position: sticky;
+    height: auto;
+    width: 100%;
+  }
+
+  .messageFrom {
+    width: 400px;
+    height: 260px;
+  }
+
+  .from {
+    width: 400px;
+    height: 35px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .send {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .buttonSend {
+    width: 100%;
+  }
+
+  .emailInfo {
+    width: 95%;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .Links {
+    position: sticky;
+    margin: 0;
+    margin-top: 300px!important;
+  }
+
+  .image {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (min-width: 679px) and (max-width: 821px){
+  .spaceship {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactContent{
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+
+  .homeAlien {
+    width: 100px;
+    height: 148px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
+  }
+
+  .innerContent {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+  }
+
+  .illustration {
+    position: sticky;
+    height: auto;
+    width: 100%;
+  }
+
+  .messageFrom {
+    width: 600px;
+    height: 260px;
+  }
+
+  .from {
+    width: 600px;
+    height: 35px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .send {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .buttonSend {
+    width: 100%;
+  }
+
+  .emailInfo {
+    width: 95%;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .Links {
+    position: sticky;
+    margin: 0;
+    margin-top: 300px!important;
+  }
+
+  .image {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .emailInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -91,7 +91,7 @@
 }
 
 /* iPad and tablet Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 821px) and (orientation: portrait) {
+@media only screen and (min-device-width: 661px) and (max-device-width: 821px) and (orientation: portrait) {
     .home {
         display: flex;
         flex-direction: column;
@@ -172,26 +172,8 @@
       }
 }
 
-@media only screen and (min-device-width: 951px) and (max-device-width: 1024px) and (max-device-height: 800px) {
-  .homeAlien {
-    display: flex;
-    position: fixed;
-    height: 400px;
-    width: 500px;
-  }
-
-  .homeButtons {
-    position: relative;
-    width: 200px;
-    height: 80px;
-    margin-right: 40px;
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-}
-
 /* Phone in portrait */
-@media only screen and (min-device-width: 319px) and (max-device-width: 420px) and (orientation: portrait) {
+@media only screen and (min-device-width: 319px) and (max-device-width: 660px) and (orientation: portrait) {
     
     .home {
         display: flex;
@@ -223,6 +205,7 @@
         height: 50%;
         float: left;
         clear: left;
+        margin-top: 30px;
       }
 
     .homeAlien {
@@ -254,7 +237,7 @@
         height: 100%;
         justify-content: center;
         align-items: center;
-        margin-top: 0px;
+        margin-top: 60px;
       }
       
       .MyWork {
@@ -275,9 +258,8 @@
       
 }
 
-
 /* small phone landscape */
-@media only screen and (min-device-width: 319px) and (max-device-width: 500px) and (orientation: landscape) {
+@media only screen and (min-device-width: 319px) and (max-device-width: 660px) and (orientation: landscape) {
     .home {
         display: flex;
         flex: 1;
@@ -442,4 +424,502 @@
     margin-bottom: 100px;
   }
 
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1260px){
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .illustration {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    float: left;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    float: left;
+    clear: left;
+  }
+
+.homeAlien {
+    display: block;
+    position: fixed;
+    height: 330px;
+    width: 450px;
+  }
+
+  .homeButtons {
+    position: relative;
+    width: 500px;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .alienImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .AboutMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MyWork {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ContactMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 380px){
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .illustration {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    float: left;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    float: left;
+    clear: left;
+    margin-top: 30px;
+  }
+
+.homeAlien {
+    display: block;
+    position: fixed;
+    height: 230px;
+    width: 300px;
+  }
+
+  .homeButtons {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .alienImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .AboutMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .MyWork {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ContactMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .illustration {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    float: left;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    float: left;
+    clear: left;
+    margin-top: 30px;
+  }
+
+.homeAlien {
+    display: block;
+    position: fixed;
+    height: 230px;
+    width: 300px;
+  }
+
+  .homeButtons {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .alienImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .AboutMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .MyWork {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ContactMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 678px){
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .illustration {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    float: left;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    float: left;
+    clear: left;
+    margin-top: 30px;
+  }
+
+.homeAlien {
+    display: block;
+    position: fixed;
+    height: 230px;
+    width: 300px;
+  }
+
+  .homeButtons {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .alienImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .AboutMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .MyWork {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ContactMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+@media only screen and (min-width: 679px) and (max-width: 821px){
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .illustration {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    float: left;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    float: left;
+    clear: left;
+  }
+
+.homeAlien {
+    display: block;
+    position: fixed;
+    height: 330px;
+    width: 450px;
+  }
+
+  .homeButtons {
+    position: relative;
+    width: 500px;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .alienImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .AboutMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MyWork {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ContactMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1021px){
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .illustration {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    float: left;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    float: left;
+    clear: left;
+  }
+
+.homeAlien {
+    display: block;
+    position: fixed;
+    height: 330px;
+    width: 450px;
+  }
+
+  .homeButtons {
+    position: relative;
+    width: 500px;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .alienImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .AboutMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MyWork {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ContactMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 }
