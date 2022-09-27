@@ -431,7 +431,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow-y: hidden;
+    overflow-y: scroll;
     justify-content: center;
     align-items: center;
   }
@@ -441,7 +441,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50%;
     margin: auto;
     float: left;
   }
@@ -451,7 +450,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50%;
     float: left;
     clear: left;
     margin-top: 30px;
@@ -459,9 +457,10 @@
 
 .homeAlien {
     display: block;
-    position: fixed;
+    position: sticky;
     height: 230px;
     width: 300px;
+    margin-top: 300px;
   }
 
   .homeButtons {
@@ -486,7 +485,6 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
   }
   
   .MyWork {
@@ -506,7 +504,7 @@
   }
 }
 
-@media only screen and (min-width: 678px) and (max-width: 1021px){
+@media only screen and (min-width: 679px) and (max-width: 1021px){
   .home {
     display: flex;
     flex-direction: column;
@@ -514,7 +512,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow-y: hidden;
+    overflow-y: scroll;
     justify-content: center;
     align-items: center;
   }
@@ -524,7 +522,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50%;
     margin: auto;
     float: left;
   }
@@ -533,17 +530,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 250px;
     width: 100%;
-    height: 50%;
     float: left;
     clear: left;
   }
 
 .homeAlien {
     display: block;
-    position: fixed;
+    position: sticky;
     height: 330px;
     width: 450px;
+    margin-top: 600px;
   }
 
   .homeButtons {
@@ -568,6 +566,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+
   }
   
   .MyWork {
