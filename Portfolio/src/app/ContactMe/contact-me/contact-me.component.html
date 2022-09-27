@@ -29,8 +29,8 @@
                 <div class="contactContent">
                     <h1 class="heading">CONTACT ME</h1>
                     <div class="emailInfo">
-                            <textarea onfocus="this.value=''" class="from" (keyup)="getFrom($event)">{{emailAddress}}</textarea>
-                            <textarea onfocus="this.value=''"class="messageFrom" (keyup)="getBody($event)">{{message}}</textarea>
+                            <textarea onfocus="this.value=''" [(ngModel)]="emailAddress" class="from" id="from" (keyup)="getFrom($event)"></textarea>
+                            <textarea onfocus="this.value=''" [(ngModel)] = "message" class="messageFrom" id="messageFrom" (keyup)="getBody($event)"></textarea>
                             <div class="buttonSend">
                                 <button class="send" type="submit" (click)="sendEmails()">
                                     SEND EMAIL

@@ -7,6 +7,7 @@ import { ContactMeComponent } from './ContactMe/contact-me/contact-me.component'
 import { HttpClientModule } from '@angular/common/http'; 
 import {ToastModule} from 'primeng/toast';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     ToastModule,
     BrowserAnimationsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
