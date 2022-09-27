@@ -244,8 +244,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 380px;
-    height: 490px;
+    width: 340px;
+    height: 591px;
     border-radius: 20px;
     text-align: center;
     box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8),
@@ -257,8 +257,8 @@ button {
     margin: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width: 340px;
-    height: 460px;
+    width: 285px;
+    height: 536px;
   }
 
   .home {
@@ -351,8 +351,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 380px;
-    height: 490px;
+    width: 340px;
+    height: 591px;
     border-radius: 20px;
     text-align: center;
     box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8),
@@ -364,8 +364,8 @@ button {
     margin: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width: 340px;
-    height: 460px;
+    width: 285px;
+  height: 536px;
   }
 
   .home {
@@ -462,8 +462,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 280px;
-    height: 390px;
+    width: 340px;
+  height: 591px;
     border-radius: 20px;
     text-align: center;
     box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8),
@@ -475,8 +475,8 @@ button {
     margin: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width: 240px;
-    height: 360px;
+ width: 285px;
+ height: 536px;
   }
 
   .home {
@@ -568,8 +568,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 280px;
-    height: 390px;
+    width: 340px;
+    height: 591px;
     border-radius: 20px;
     text-align: center;
     box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8),
@@ -581,8 +581,9 @@ button {
     margin: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width: 240px;
-    height: 360px;
+    
+ width: 285px;
+ height: 536px;
   }
 
   .home {
@@ -674,8 +675,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 280px;
-    height: 390px;
+    width: 340px;
+    height: 591px;
     border-radius: 20px;
     text-align: center;
     box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.8),
@@ -687,8 +688,8 @@ button {
     margin: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width: 240px;
-    height: 360px;
+    width: 285px;
+  height: 536px;
   }
 
   .home {

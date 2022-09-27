@@ -61,8 +61,8 @@ export class ContactMeComponent {
             
             this.spinner = false;
             this.showSuccess();
-            this.emailAddress =  'Your Email Address...';
-            this.message = 'Type your message here...';
+            window.location.reload();
+           
           },
           error: (error) => {
             this.errorMessage = error.message;
@@ -70,9 +70,6 @@ export class ContactMeComponent {
           },
         });
     } else {
-
-      this.message = this.body;
-      this.emailAddress = this.from;
       this.spinner = false;
       this.disabled = false;
       this.showError();
@@ -89,6 +86,7 @@ export class ContactMeComponent {
       detail: 'Your message has successfully been sent',
       key: 'myToast',
     });
+    
   }
 
   showError() {
