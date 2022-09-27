@@ -61,6 +61,8 @@ export class ContactMeComponent {
             
             this.spinner = false;
             this.showSuccess();
+            this.emailAddress =  'Your Email Address...';
+            this.message = 'Type your message here...';
           },
           error: (error) => {
             this.errorMessage = error.message;
@@ -68,13 +70,15 @@ export class ContactMeComponent {
           },
         });
     } else {
+
+      this.message = this.body;
+      this.emailAddress = this.from;
       this.spinner = false;
       this.disabled = false;
       this.showError();
     }
 
-    this.emailAddress =  'Your Email Address...';
-    this.message = 'Type your message here...';
+    
   }
 
   showSuccess() {

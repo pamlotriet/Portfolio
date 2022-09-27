@@ -96,7 +96,7 @@ background-color: var(--background);
   position: relative;
   flex-direction: column;
   float: left;
-  font-family: Calibri;
+  font-family: Calibri (Body);
   width: 60vw;
   overflow-y: scroll;
   max-height: 78%;
@@ -174,10 +174,6 @@ button {
   max-width: 100%;
 }
 
-
-
-
-
 @media only screen and (min-width: 679px) and (max-width: 821px){
   .spaceship{
     position: relative;
@@ -215,7 +211,7 @@ button {
     display: flex;
     flex-direction: column;
     float: left;
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -434,7 +430,7 @@ button {
     display: flex;
     flex-direction: column;
     float: left;
-    width: 80vw;
+    width: 100vw;
     margin-top: 20px;
     overflow-y: hidden;
     max-height: none;
@@ -540,7 +536,7 @@ button {
     display: flex;
     flex-direction: column;
     float: left;
-    width: 80vw;
+    width: 100vw;
     margin-top: 20px;
     overflow-y: hidden;
     max-height: none;
@@ -646,7 +642,7 @@ button {
     display: flex;
     flex-direction: column;
     float: left;
-    width: 80vw;
+    width: 100vw;
     margin-top: 20px;
     overflow-y: hidden;
     max-height: none;
