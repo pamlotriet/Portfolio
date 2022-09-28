@@ -333,6 +333,7 @@
     height: fit-content;
     font-size: 16px;
     margin-bottom: 30px;
+    text-align: left;
   }
 
   .projectHeading {
@@ -382,7 +383,7 @@
   }
 
   .projectContainer {
-    width: 300px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -392,6 +393,7 @@
     height: fit-content;
     font-size: 16px;
     margin-bottom: 30px;
+    text-align: left;
   }
 
   .projectHeading {
@@ -445,6 +447,7 @@
   .projectParagraph {
     height: fit-content;
     font-size: 16px;
+    text-align: left;
   }
 
   .projectHeading {
@@ -497,6 +500,7 @@
   .projectParagraph {
     height: fit-content;
     font-size: 16px;
+    text-align: left;
   }
 
   .projectHeading {
