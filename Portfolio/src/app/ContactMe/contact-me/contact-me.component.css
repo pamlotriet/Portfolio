@@ -727,7 +727,120 @@ a {
   }
 }
 
-@media only screen and (min-width: 319px) and (max-width: 380px) {
+@media only screen and (min-width: 370px) and (max-width: 380px) {
+  .spaceship {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons {
+    margin-top: 100px;
+  }
+  .contactContent {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .spaceshipImg {
+    width: 377px;
+    height: 200px;
+  }
+
+  .homeAlien {
+    width: 100px;
+    height: 148px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s;
+    animation-fill-mode: backwards;
+    width: 100vw;
+    margin-left: 0px;
+    overflow-y: scroll !important;
+    top: 0;
+    position: sticky;
+  }
+
+  .innerContent {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+  }
+
+  .illustration {
+    position: sticky;
+    height: auto;
+    width: 100%;
+  }
+
+  .messageFrom {
+    width: 350px;
+    height: 260px;
+  }
+
+  .from {
+    width: 350px;
+    height: 60px;
+  }
+
+  .home {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+  }
+
+  .send {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .buttonSend {
+    width: 100%;
+  }
+
+  .emailInfo {
+    width: 95%;
+  }
+
+  .backHome {
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+  }
+
+  .Links {
+    position: sticky;
+    margin: 0;
+    margin-top: 300px !important;
+  }
+
+  .image {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .emailInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 369px) {
   .spaceship {
     position: relative;
     justify-content: center;
@@ -892,12 +1005,12 @@ a {
   }
 
   .messageFrom {
-    width: 300px;
+    width: 350px;
     height: 260px;
   }
 
   .from {
-    width: 300px;
+    width: 350px;
     height: 60px;
   }
 
