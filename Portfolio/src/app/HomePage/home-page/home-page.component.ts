@@ -10,16 +10,7 @@ export class HomePageComponent implements OnInit {
   errorMessage: any;
   constants: Constants = new Constants();
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
-  ngOnInit(): void {}
-
-  wakeUp() {
-    this.http.get<any>(this.constants.WAKE_ENDPOINT, {}).subscribe({
-      error: (error) => {
-        this.errorMessage = error.message;
-        console.error('There was an error waking up the service', error);
-      },
-    });
-  }
+  ngOnInit(): void { }
 }

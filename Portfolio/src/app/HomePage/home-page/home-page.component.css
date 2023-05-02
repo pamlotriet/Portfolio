@@ -94,88 +94,6 @@
 
 /* iPad and tablet Portrait */
 @media only screen and (min-device-width: 661px) and (max-device-width: 821px) and (orientation: portrait) {
-    .home {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow-y: hidden;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .illustration {
-        display: block;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 50%;
-        margin: auto;
-        float: left;
-      }
-      
-      .buttons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50%;
-        float: left;
-        clear: left;
-      }
-
-    .homeAlien {
-        display: block;
-        position: fixed;
-        height: 430px;
-        width: 600px;
-      }
-    
-      .homeButtons {
-        position: relative;
-        width: 500px;
-        height: 80px;
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-
-      .alienImage {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-      }
-
-      .AboutMe {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .MyWork {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .ContactMe {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-      }
-}
-
-
-@media only screen and (min-width: 1100px) and (max-width: 1260px){
   .home {
     display: flex;
     flex-direction: column;
@@ -187,7 +105,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .illustration {
     display: block;
     align-items: center;
@@ -197,7 +115,7 @@
     margin: auto;
     float: left;
   }
-  
+
   .buttons {
     display: flex;
     justify-content: center;
@@ -208,7 +126,89 @@
     clear: left;
   }
 
-.homeAlien {
+  .homeAlien {
+    display: block;
+    position: fixed;
+    height: 430px;
+    width: 600px;
+  }
+
+  .homeButtons {
+    position: relative;
+    width: 500px;
+    height: 80px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .alienImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .AboutMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .MyWork {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ContactMe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1260px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .illustration {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    float: left;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    float: left;
+    clear: left;
+  }
+
+  .homeAlien {
     display: block;
     position: fixed;
     height: 330px;
@@ -238,7 +238,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .MyWork {
     display: flex;
     width: 100%;
@@ -246,7 +246,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .ContactMe {
     display: flex;
     width: 100%;
@@ -256,7 +256,7 @@
   }
 }
 
-@media only screen and (min-width: 319px) and (max-width: 380px){
+@media only screen and (min-width: 319px) and (max-width: 380px) {
   .home {
     display: flex;
     flex-direction: column;
@@ -268,7 +268,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .illustration {
     display: block;
     align-items: center;
@@ -278,7 +278,7 @@
     margin: auto;
     float: left;
   }
-  
+
   .buttons {
     display: flex;
     justify-content: center;
@@ -290,7 +290,7 @@
     margin-top: 30px;
   }
 
-.homeAlien {
+  .homeAlien {
     display: block;
     position: fixed;
     height: 230px;
@@ -321,7 +321,7 @@
     align-items: center;
     margin-top: 60px;
   }
-  
+
   .MyWork {
     display: flex;
     width: 100%;
@@ -329,7 +329,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .ContactMe {
     display: flex;
     width: 100%;
@@ -352,7 +352,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .illustration {
     display: block;
     align-items: center;
@@ -362,7 +362,7 @@
     margin: auto;
     float: left;
   }
-  
+
   .buttons {
     display: flex;
     justify-content: center;
@@ -374,7 +374,7 @@
     margin-top: 30px;
   }
 
-.homeAlien {
+  .homeAlien {
     display: block;
     position: fixed;
     height: 230px;
@@ -405,7 +405,7 @@
     align-items: center;
     margin-top: 60px;
   }
-  
+
   .MyWork {
     display: flex;
     width: 100%;
@@ -413,7 +413,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .ContactMe {
     display: flex;
     width: 100%;
@@ -424,7 +424,7 @@
 }
 
 
-@media only screen and (min-width: 481px) and (max-width: 678px){
+@media only screen and (min-width: 481px) and (max-width: 678px) {
   .home {
     display: flex;
     flex-direction: column;
@@ -436,7 +436,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .illustration {
     display: block;
     align-items: center;
@@ -445,7 +445,7 @@
     margin: auto;
     float: left;
   }
-  
+
   .buttons {
     display: flex;
     justify-content: center;
@@ -456,7 +456,7 @@
     margin-top: 30px;
   }
 
-.homeAlien {
+  .homeAlien {
     display: block;
     position: sticky;
     height: 230px;
@@ -487,7 +487,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .MyWork {
     display: flex;
     width: 100%;
@@ -495,7 +495,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .ContactMe {
     display: flex;
     width: 100%;
@@ -505,7 +505,7 @@
   }
 }
 
-@media only screen and (min-width: 679px) and (max-width: 1021px){
+@media only screen and (min-width: 679px) and (max-width: 1021px) {
   .home {
     display: flex;
     flex-direction: column;
@@ -517,7 +517,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .illustration {
     display: block;
     align-items: center;
@@ -526,7 +526,7 @@
     margin: auto;
     float: left;
   }
-  
+
   .buttons {
     display: flex;
     justify-content: center;
@@ -537,7 +537,7 @@
     clear: left;
   }
 
-.homeAlien {
+  .homeAlien {
     display: block;
     position: sticky;
     height: 330px;
@@ -569,7 +569,7 @@
     align-items: center;
 
   }
-  
+
   .MyWork {
     display: flex;
     width: 100%;
@@ -577,7 +577,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .ContactMe {
     display: flex;
     width: 100%;

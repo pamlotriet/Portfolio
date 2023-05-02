@@ -6,7 +6,8 @@
     </div>
     <div class="content">
         <div class="backHome">
-            <button class="home" routerLink=""><img class="homeLink" src="assets/AlienIcon.png" alt="Failed to load image"/> HOME</button>
+            <button class="home" routerLink=""><img class="homeLink" src="assets/AlienIcon.png"
+                    alt="Failed to load image" /> HOME</button>
         </div>
         <div class="info">
             <div class="innerContent">
@@ -15,12 +16,14 @@
                         <img class="homeAlien" src="assets/ContactAlien.png" alt="Failed to load image">
                     </div>
                     <div class="Links">
-                       
+
                         <p class="email">
-                            <a class = "linkText1" ><em class="fa-solid fa-phone"> style="font-size: 20px; color:white;"></em> 060 5017 253</a>
+                            <a class="linkText1"><em class="fa-solid fa-phone"> style="font-size: 20px;
+                                    color:white;"></em> 060 5017 253</a>
                         </p>
                         <p class="linkdn">
-                            <a class = "linkText" (click)="openLink()"><em class="fa-brands fa-linkedin" style="font-size: 20px; color:white;"></em> Pamela Lotriet</a>
+                            <a class="linkText" (click)="openLink()"><em class="fa-brands fa-linkedin"
+                                    style="font-size: 20px; color:white;"></em> Pamela Lotriet</a>
                         </p>
                     </div>
                 </div>
@@ -29,15 +32,17 @@
                 <div class="contactContent">
                     <h1 class="heading">CONTACT ME</h1>
                     <div class="emailInfo">
-                            <textarea placeholder="{{emailAddress}}" class="from" id="from" (keyup)="getFrom($event)"></textarea>
-                            <textarea  placeholder="{{message}}" class="messageFrom" id="messageFrom" (keyup)="getBody($event)"></textarea>
-                            <div class="buttonSend">
-                                <button class="send" type="submit" (click)="sendEmails()">
-                                    SEND EMAIL
-                               </button>
-                            </div>
+                        <textarea placeholder="{{emailAddress}}" class="from" id="from"
+                            (keyup)="getFrom($event)"></textarea>
+                        <textarea placeholder="{{message}}" class="messageFrom" id="messageFrom"
+                            (keyup)="getBody($event)"></textarea>
+                        <div class="buttonSend">
+                            <button class="send" type="submit" (click)="sendEmails()">
+                                SEND EMAIL
+                            </button>
                         </div>
+                    </div>
                 </div>
+            </div>
         </div>
     </div>
-</div>

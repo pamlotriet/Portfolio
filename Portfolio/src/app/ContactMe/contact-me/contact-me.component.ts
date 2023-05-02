@@ -26,7 +26,7 @@ export class ContactMeComponent {
   constructor(
     private http: HttpClient,
     private messageService: MessageService
-  ) {}
+  ) { }
 
   openLink() {
     window.open('https://www.linkedin.com/in/pamela-lotriet-b4a1a0169/');
@@ -34,12 +34,10 @@ export class ContactMeComponent {
 
   getFrom(item: any) {
     this.from = item.target.value;
-    console.log(this.from);
   }
 
   getBody(item: any) {
     this.body = item.target.value;
-    console.log(this.body);
   }
 
   sendEmails() {
@@ -56,13 +54,13 @@ export class ContactMeComponent {
           Body: this.body,
         })
         .subscribe({
-          
+
           next: (data) => {
-            
+
             this.spinner = false;
             this.showSuccess();
             window.location.reload();
-           
+
           },
           error: (error) => {
             this.errorMessage = error.message;
@@ -75,7 +73,7 @@ export class ContactMeComponent {
       this.showError();
     }
 
-    
+
   }
 
   showSuccess() {
@@ -86,7 +84,7 @@ export class ContactMeComponent {
       detail: 'Your message has successfully been sent',
       key: 'myToast',
     });
-    
+
   }
 
   showError() {
@@ -111,11 +109,11 @@ export class ContactMeComponent {
       body === '' ||
       body === undefined
     ) {
-     
+
       return true;
     }
 
-    if(from.trim() === '' || body.trim() === '') {
+    if (from.trim() === '' || body.trim() === '') {
       return true
     }
 

@@ -133,6 +133,7 @@
   position: relative;
   width: 100%;
 }
+
 .messageFrom {
   -webkit-appearance: none;
   outline: none;
@@ -262,6 +263,7 @@ a {
   0% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
   }
@@ -271,6 +273,7 @@ a {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -625,6 +628,7 @@ a {
   .buttons {
     margin-top: 100px;
   }
+
   .contactContent {
     justify-content: center;
     align-items: center;
@@ -737,6 +741,7 @@ a {
   .buttons {
     margin-top: 100px;
   }
+
   .contactContent {
     justify-content: center;
     align-items: center;
@@ -850,6 +855,7 @@ a {
   .buttons {
     margin-top: 100px;
   }
+
   .contactContent {
     justify-content: center;
     align-items: center;
@@ -963,6 +969,7 @@ a {
   .buttons {
     margin-top: 100px;
   }
+
   .contactContent {
     justify-content: center;
     align-items: center;

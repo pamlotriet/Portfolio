@@ -1,35 +1,46 @@
 <form class="aboutme">
-   <div class="content" *ngIf="show">
-    <div class="backHome">
-        <button class="home" routerLink=""><img class="homeLink" src="assets/AlienIcon.png"/> HOME</button>
-    </div>
-    <div class="info">
-        <div class="innerContent">
-            <div class="aboutText">
-                <h1 class = "about">ABOUT</h1>
-                <p class="aboutparagraph"> I am a vibrant and passionate software developer currently working as a junior software developer 
-                    at Retro Rabbit in Pretoria, South Africa. My love for the software development industry started in high school
-                    when I was encouraged to take Information Technology as a subject. On the first day of learining about what this Information
-                    Technology subject entailed, I knew that I would fall inlove with every aspect of it. <br/><br/>
-
-                    After falling inlove with Information Technology and the art of writing code, I decided to persue a Bachelors degree in 
-                    Information Technology. During this time I gained a lot of knowledge around writing code, impelementing computer security,
-                    managing software projects and creating and maintaing databases using various different technologies. After completing my Bachelors degree in 
-                    Information Technology, it still felt like I didn't know enough, or rather, didn't know everything that I wanted to know yet.
-                    I wanted to know more, wanted to understand  better, like there was still something missing in my life, something more I needed to know
-                    before I could move on. So I decided to further educate myself by enrolling for a Bachelors of Honnours degree in Computer Science and information systems.
-                    During this degree I broadened my knowledge on several different topics such as computer security, database modelling and development, project management and
-                    data warehousing. I completed my Honnours degree in 2021 with distiction, and even though I am satisfied with my accomplishments over the years and decided that
-                    I could finally move on from studying to achieve something more, I still aspire to someday pursue and complete a Master's degree in Information Technology
-                    or Computer science.<br/><br/> 
-                    
-                    On a more personal note, I thrive in environments where I can express my creativity and freely share my insights. I am a very motivated worker and can make almost
-                    any situation work for me,however I tend to be especially motivated when the work I am doing has meaning or can help improve someone else's circumstances.
-                </p>
-                    <h1 class = "about">MY SKILLS</h1>
+    <div class="content" *ngIf="show">
+        <div class="backHome">
+            <button class="home" routerLink=""><img class="homeLink" src="assets/AlienIcon.png" /> HOME</button>
+        </div>
+        <div class="info">
+            <div class="innerContent">
+                <div class="aboutText">
+                    <h1 class="about">ABOUT</h1>
+                    <p class="aboutparagraph">
+                        I am highly skilled and motivated software developer with a strong background in designing,
+                        developing, and implementing software solutions. I am dedicated to delivering high-quality and
+                        efficient code solutions. With 1 year and 5 months of experience in the industry, I have a
+                        proven track record of successfully completing complex projects and collaborating effectively
+                        within cross-functional teams.
+                    </p>
+                    <p class="aboutparagraph">
+                        My expertise lies in full-stack development, encompassing front-end and back-end technologies.I
+                        am Proficient in programming languages such as Java, Python, JavaScript,Typescript ,Net Core and
+                        have recently engaged in learning Flutter.I am adept at developing scalable web applications,
+                        APIs, and mobile applications. I have
+                        hands-on experience with various frameworks and libraries, including VueJs, Angular, and Spring.
+                    </p>
+                    <p class="aboutparagraph">
+                        I am experienced in the entire software development lifecycle, from requirement gathering and
+                        analysis to design, implementation, testing, and deployment. I have a keen eye for detail,
+                        ensuring code quality through rigorous testing and debugging processes. Additionally, I am
+                        well-versed in version control systems like Git and have a solid understanding of agile
+                        development methodologies, enabling me to adapt quickly to changing project requirements and
+                        deliver results within deadlines.
+                    </p>
+                    <p class="aboutparagraph">
+                        As a strong problem-solver, I thrive on challenges and enjoy finding innovative solutions to
+                        complex technical problems. I possess excellent analytical and communication skills, allowing me
+                        to effectively collaborate with stakeholders, understand their needs, and translate them into
+                        functional software applications. I am committed to continuous learning and staying updated with
+                        the latest industry trends, ensuring the adoption of best practices and the integration of
+                        cutting-edge technologies into my work.
+                    </p>
+                    <h1 class="about">MY SKILLS</h1>
                     <p class="aboutparagraph">
                         <li>
-                            C#,  .Net Core, ASP.NET, Entity Framework
+                            C#, .Net Core, ASP.NET, Entity Framework
                         </li>
                         <li>
                             Java, Android Java
@@ -44,16 +55,16 @@
                             SQL Server, PostGreSQL
                         </li>
                     </p>
+                </div>
+                <div class="photo">
+                    <div class="picture">
+                        <img class="MyPhoto" src="assets/Pam_portfolio_photo-min.jpeg">
+                    </div>
+                </div>
             </div>
-            <div class="photo">
-             <div class="picture">
-                 <img class = "MyPhoto" src="assets/Pam_portfolio_photo-min.jpeg">
-             </div>
-            </div>
-         </div>
+        </div>
     </div>
-   </div>
-   <div class="spaceship" *ngIf="!show">
+    <div class="spaceship" *ngIf="!show">
         <img class="spaceshipImg" src="assets/Pam_se_spaceship_Regs.png">
-   </div>
+    </div>
 </form>

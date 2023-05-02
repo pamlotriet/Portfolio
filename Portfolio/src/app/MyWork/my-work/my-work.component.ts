@@ -12,18 +12,18 @@ export class MyWorkComponent implements OnInit {
   show = false;
   seconds = 2;
 
-  showContent(){
+  showContent() {
     this.show = true;
     return this.show
   }
 
-  playAudio(){
+  playAudio() {
     let audio = new Audio();
     audio.src = "assets/Spaceship.wav";
     audio.load();
     audio.play();
   }
-  
+
   ngOnInit(): void {
     this.playAudio();
     setInterval(() => {

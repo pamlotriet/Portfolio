@@ -56,6 +56,7 @@
   from {
     left: 80%;
   }
+
   to {
     left: -120%;
   }
@@ -66,15 +67,16 @@
   position: relative;
   float: left;
   font-size: 64px;
+  width: 1200px;
   font-family: "Bangers", cursive;
   text-align: left;
-  margin-left: 200px;
   color: var(--primary-white);
 }
 
 .headings {
   display: flex;
-  flex-direction: row;
+  width: 100%;
+  justify-content: center;
 }
 
 .projectContainer {
@@ -104,6 +106,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -147,15 +150,13 @@
 
 
 @media only screen and (min-width: 821px) and (max-width: 1021px) {
-  .heading{
-    margin-left: 40px;
-  }
-  .spaceship{
+
+  .spaceship {
     position: relative;
     justify-content: center;
     align-items: center;
   }
-  
+
   .spaceshipImg {
     width: 377px;
     height: 200px;
@@ -171,6 +172,10 @@
     display: flex;
     flex-direction: row;
     height: fit-content;
+  }
+
+  .heading {
+    width: 800px;
   }
 
   .projectParagraph {
@@ -200,20 +205,18 @@
 }
 
 @media only screen and (min-width: 1100px) and (max-width: 1260px) {
-  .heading{
-    margin-left: 40px;
-  }
-  .spaceship{
+
+  .spaceship {
     position: relative;
     justify-content: center;
     align-items: center;
   }
-  
+
   .spaceshipImg {
     width: 377px;
     height: 200px;
   }
-  
+
   .info {
     margin-bottom: 50px;
     height: auto;
@@ -224,6 +227,10 @@
     display: flex;
     flex-direction: row;
     height: fit-content;
+  }
+
+  .heading {
+    width: 900px;
   }
 
   .projectParagraph {
@@ -254,15 +261,13 @@
 }
 
 @media only screen and (min-width: 1022px) and (max-width: 1099px) {
-  .heading{
-    margin-left: 40px;
-  }
-  .spaceship{
+
+  .spaceship {
     position: relative;
     justify-content: center;
     align-items: center;
   }
-  
+
   .spaceshipImg {
     width: 377px;
     height: 200px;
@@ -280,6 +285,10 @@
     height: fit-content;
   }
 
+  .heading {
+    width: 900px;
+  }
+
   .projectParagraph {
     height: fit-content;
     font-size: 14px;
@@ -288,10 +297,12 @@
   .projectHeading {
     font-size: 20px;
   }
+
   .projectDisplayImage {
     height: 250px;
     width: 250px;
   }
+
   .projectDescription {
     width: auto;
     margin-left: 30px;
@@ -305,13 +316,13 @@
 }
 
 @media only screen and (min-width: 319px) and (max-width: 380px) {
-  
-  .spaceship{
+
+  .spaceship {
     position: relative;
     justify-content: center;
     align-items: center;
   }
-  
+
   .spaceshipImg {
     width: 377px;
     height: 200px;
@@ -329,6 +340,10 @@
     height: fit-content;
   }
 
+  .heading {
+    width: 300px;
+  }
+
   .projectParagraph {
     height: fit-content;
     font-size: 16px;
@@ -357,21 +372,16 @@
     width: auto;
   }
 
-  .heading{
-    margin-left: 40px;
-  }
 }
 
 @media only screen and (min-width: 381px) and (max-width: 480px) {
-  .heading{
-    margin-left: 40px;
-  }
-  .spaceship{
+
+  .spaceship {
     position: relative;
     justify-content: center;
     align-items: center;
   }
-  
+
   .spaceshipImg {
     width: 377px;
     height: 200px;
@@ -389,6 +399,10 @@
     height: fit-content;
   }
 
+  .heading {
+    width: 350px;
+  }
+
   .projectParagraph {
     height: fit-content;
     font-size: 16px;
@@ -404,6 +418,7 @@
     height: 250px;
     width: 250px;
   }
+
   .projectDescription {
     width: auto;
     margin-left: 30px;
@@ -418,15 +433,13 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 678px) {
-  .heading{
-    margin-left: 40px;
-  }
-  .spaceship{
+
+  .spaceship {
     position: relative;
     justify-content: center;
     align-items: center;
   }
-  
+
   .spaceshipImg {
     width: 377px;
     height: 200px;
@@ -442,6 +455,10 @@
     display: flex;
     flex-direction: row;
     height: fit-content;
+  }
+
+  .heading {
+    width: 600px;
   }
 
   .projectParagraph {
@@ -470,16 +487,15 @@
     margin: 20px;
   }
 }
+
 @media only screen and (min-width: 679px) and (max-width: 821px) {
-  .heading{
-    margin-left: 40px;
-  }
-  .spaceship{
+
+  .spaceship {
     position: relative;
     justify-content: center;
     align-items: center;
   }
-  
+
   .spaceshipImg {
     width: 377px;
     height: 200px;
@@ -495,6 +511,10 @@
     display: flex;
     flex-direction: row;
     height: fit-content;
+  }
+
+  .heading {
+    width: 700px;
   }
 
   .projectParagraph {
@@ -523,4 +543,3 @@
     width: auto;
   }
 }
-

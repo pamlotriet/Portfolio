@@ -6,16 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent implements OnInit {
-  
+
   show = false;
   seconds = 2;
 
-  showContent(){
+  showContent() {
     this.show = true;
     return this.show
   }
 
-  playAudio(){
+  playAudio() {
     let audio = new Audio();
     audio.src = "assets/Spaceship.wav";
     audio.load();
@@ -23,7 +23,7 @@ export class AboutMeComponent implements OnInit {
   }
 
   constructor() { }
-  
+
   ngOnInit(): void {
     this.playAudio();
     setInterval(() => {
